@@ -10,14 +10,15 @@ This is a sample helloworld nodejs api running on docker container.
 2) cd helloworld
 3) npm install
 4) npm start
-4) check the ExpressJS API is working or not
-5) API Details
+5) check the ExpressJS API is working or not
+6) API Details
     - localhost:9000/
     - localhost:9000/hello
-6) stop the NodeJS server using Ctrl+C
+
+7) stop the NodeJS server using Ctrl+C
 
 ##### Docker Build Image
-7) docker build -t helloworld-node-10 . <br/> where -t is the tag of the docker image
+8) docker build -t helloworld-node-10 . <br/> where -t is the tag of the docker image
 ![](images/docker_images.png)
 
 #### Docker Run Image on Container
@@ -27,7 +28,7 @@ This is a sample helloworld nodejs api running on docker container.
 ![](images/docker_container.png)
 
 #### Docker Container Id
-9) docker ps
+10) docker ps
 #### Docker Container Logs
-10) docker logs <container-id> 
-11) Follow Step 5 after checking logs
+11) docker logs <container-id> 
+12) Follow Step 5 after checking logs
