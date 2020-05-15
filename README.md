@@ -17,7 +17,7 @@ This is a sample helloworld nodejs api running on docker container.
 
 7) stop the NodeJS server using Ctrl+C
 
-##### Docker Build Image
+#### Docker Build Image
 8) docker build -t helloworld-node-10 . <br/> where -t is the tag of the docker image
 ![](images/docker_images.png)
 
