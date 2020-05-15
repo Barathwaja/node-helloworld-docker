@@ -19,12 +19,14 @@ This is a sample helloworld nodejs api running on docker container.
 
 #### Docker Build Image
 8) docker build -t helloworld-node-10 . <br/> where -t is the tag of the docker image
+<br/><br/>
 ![](images/docker_images.png)
 
 #### Docker Run Image on Container
 8) docker run -p 9000:9000 -d helloworld-node-10 <br/> where <br/>
 -p is to expose the internal port outside the docker container <br/>
 -d is to run the container in the detached mode
+<br/><br/>
 ![](images/docker_container.png)
 
 #### Docker Container Id
