@@ -35,5 +35,7 @@ This is a sample helloworld nodejs api running on docker container.
 11) docker logs <container-id> 
 #### Docker Interaction
 12) docker exec -it <container-id> /bin/sh <br/> where <br/>
+exec is to execute
 -it is interactive terminal session will be created with `sh` as interactive mode.
+-u is to run interactive terminal with specific user to login
 13) Follow Step 5 after checking logs
