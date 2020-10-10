@@ -18,12 +18,12 @@ This is a sample helloworld nodejs api running on docker container.
 7) stop the NodeJS server using Ctrl+C
 
 #### Docker Build Image
-8) docker build -t helloworld-node-10 . <br/> where -t is the tag of the docker image
+8) docker build -t helloworld-node-12 . <br/> where -t is the tag of the docker image
 <br/><br/>
 ![](images/docker_images.png)
 
 #### Docker Run Image on Container
-8) docker run -p 9000:9000 -d helloworld-node-10 <br/> where <br/>
+8) docker run -p 9000:9000 -d helloworld-node-12 <br/> where <br/>
 -p is to expose the internal port outside the docker container <br/>
 -d is to run the container in the detached mode
 <br/><br/>
@@ -33,4 +33,7 @@ This is a sample helloworld nodejs api running on docker container.
 10) docker ps
 #### Docker Container Logs
 11) docker logs <container-id> 
-12) Follow Step 5 after checking logs
+#### Docker Interaction
+12) docker exec -it <container-id> /bin/sh <br/> where <br/>
+-it is interactive terminal session will be created with `sh` as interactive mode.
+13) Follow Step 5 after checking logs
