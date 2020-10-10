@@ -1,11 +1,19 @@
-# Pulling from Default Node-v10
-FROM node:10
+# Pulling from Default Node-v12
+FROM node:12
 
-WORKDIR /usr/src/app
+LABEL maintainer="sbarathwaj4@gmail.com"
 
-COPY helloworld/* ./
+ARG APP_DIR=/usr/src/app
 
-RUN npm install
+RUN mkdir $APP_DIR && chown -R node:node $APP_DIR
+
+WORKDIR $APP_DIR
+
+USER node
+
+COPY --chown=node:node helloworld/* ./
+
+RUN npm install --only=production
 
 # Running on port 9000
 EXPOSE 9000
