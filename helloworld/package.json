@@ -12,7 +12,7 @@
   "author": "sbarathwaj4@gmail.com",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.20.0",
+    "axios": "^0.21.1",
     "express": "^4.17.1",
     "winston": "^3.3.3"
   },
